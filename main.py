@@ -32,6 +32,12 @@ def submit():
             "november1" : november1,
             "november2" : november2
         }
+
+    data = response.get(mandal_dict['master_url']).json()
+    for i in data:
+        if i['Email'] == email:
+            return redirect(url_for('error'))
+    
     row = {
         "sheet1" : {
             "Name" : name,
@@ -49,6 +55,14 @@ def submit():
     print(response2.status_code)
 
     return render_template('thankyou.html',value=user_data)
+@app.route('/error')
+def error():
+    return render_template('error.html')
+
+@app.route('/thankyou')
+def thankyou():
+    return render_template('thankyou.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
