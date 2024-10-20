@@ -20,8 +20,8 @@ def submit():
     mandal_dict = {
     'NorthYork' : 'https://sheetdb.io/api/v1/gxmmko96zjybv',
     'Etobicoke' : 'https://sheetdb.io/api/v1/sbr6q3rnah0vk',
-    'Brampton' : 'https://sheetdb.io/api/v1/7b1cl5do1qg81',
-    'master_url' : 'https://sheetdb.io/api/v1/ix3s63q2syihq',
+    'Brampton' : 'https://sheetdb.io/api/v1/g6s9ezoz5cbio',
+    'master_url' : 'https://sheetdb.io/api/v1/176gnwf3j8d1n',
     }
     user_data = {
             "name" : name,
