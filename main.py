@@ -33,7 +33,7 @@ def submit():
             "november2" : november2
         }
 
-    data = response.get(mandal_dict['master_url']).json()
+    data = requests.get(mandal_dict['master_url']).json()
     for i in data:
         if i['Email'] == email:
             return redirect(url_for('error'))
